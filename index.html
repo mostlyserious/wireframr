@@ -1,0 +1,230 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <header>
+    <h1><a href="#main">Register Login Basics</a></h1>
+    <ul class="nav">
+        <li><a href="#register">Register</a></li>
+        <li><a href="#login">Login</a></li>
+        <li><a href="#main">Start Over</a></li>
+    </ul>
+  </header>
+    <div id="main" role="main">
+
+        <div id="welcome" class="app_block">
+            <div class="app_content">
+                <h2>Welcome to the registration login application</h2>
+                <p>This basic wireframe lets you step through a basic registration and login process</p>
+                <p>As with any application, in order to make use of this tool you need to <a href="#register">Register</a></p>
+                <p>Already a member? please <a href="#login">Login!</a></p>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Welcome Screen</p>
+                <p>Links to: <a href="#register">Registration</a> or <a href="#login">Login</a></p>
+            </div>
+        </div>
+
+        <div id="register" class="app_block">
+            <div class="app_content">
+                <h2>Please Register</h2>
+                <form>
+                    <p><input type="text" name="username" placeholder="username"/></p>
+                    <p><input type="password" name="password" placeholder="password"/></p>
+                    <p><input type="text" name="first" placeholder="First Name"/></p>
+                    <p><input type="submit" value="register" /></p>
+                </form>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Registration Screen</p>
+                <p>Links to: <a href="#register_thanks">Registration Sucess</a> or <a href="#register_fail">Registration Failure</a></p>
+            </div>
+        </div>
+
+        <div id="register_thanks" class="app_block">
+            <div class="app_content">
+                <h2>Thank you for registering</h2>
+                <p>You should receive an email or something along those lines that will tell you what to do in a mean way.</p>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Registration Sucess screen, the user will receive an email telling them what to do next. This email will allow them to <a href="#confirm_registration">confirm</a> their account.</p>
+            </div>
+        </div>
+
+        <div id="confirm_registration" class="app_block">
+            <div class="app_content">
+                <h2>Thank you for confirming your account.</h2>
+                <p>You should receive an email or something along those lines that will tell you that you have confirmed your account and are now entitled to all that it has to offer.</p>
+                <p>Now you may <a href="#login">login</a> for realz!</p>
+            </div>
+
+            <div class="notes">
+                <h2>Notes:</h2>
+                <p>This is the account confirmation page, the user gets here after clicking a confirm link in an email they received after they registered. Once they are here they can go ahead and <a href="#login">login</a>.</p>
+            </div>
+        </div>
+
+        <div id="register_fail" class="app_block">
+            <div class="app_content">
+                <h2>Something went wrong</h2>
+                <p>You really made a mess of things that time.</p>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Registration Screen</p>
+            </div>
+        </div>
+
+        <div id="login" class="app_block">
+            <div class="app_content">
+                <h2>Please Login</h2>
+                <form>
+                    <p><input type="text" name="username" placeholder="username"/></p>
+                    <p><input type="password" name="password" placeholder="password"/></p>
+                    <p><input type="submit" value="register" /></p>
+
+                </form>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Login Screen</p>
+                <p>Sucess goes to <a href="#application_home">Application Home</a></p>
+                <p>Failure goes to <a href="#login_failed">Failed Login</a></p>
+            </div>
+        </div>
+
+        <div id="login_failed" class="app_block">
+            <div class="app_content">
+                <h2>Login Failed</h2>
+                <p><a href="#login">Try Again</a></p>
+                <p><a href="#forgot_password">Did you forget your password?</a></p>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Failed login screen</p>
+
+            </div>
+        </div>
+
+        <div id="forgot_password" class="app_block">
+            <div class="app_content">
+                <h2>Forgot your password</h2>
+                <form>
+                    <p>Please provide the email you used to register your account</p>
+                    <p><input type="text" name="email" placeholder="email"/></p>
+                    <p>An email will be sent to that address with instructions for resetting the password.</p>
+                    <p><input type="submit" value="Send it" /></p>
+                </form>
+                <a href="#login">Login again</a>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Forgot Password Screen</p>
+                <p>The system will send an email to that address with password reset instructions.</p>
+                <p>In the email they recieve, they will be provided with a link that will allow them to <a href="#reset_password">reset</a> their password.</p>
+            </div>
+        </div>
+
+        <div id="reset_password" class="app_block">
+            <div class="app_content">
+                <h2>Reset your password</h2>
+                <form>
+                    <p>Please reset your password</p>
+                    <p><input type="password" name="password" placeholder="password"/></p>
+                    <p><input type="password" name="password_confirm" placeholder="password confirmation"/></p>
+                    
+                    <p><input type="submit" value="Reset Password"/></p>
+                </form>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Reset Password Screen</p>
+                <p>The user will see this screen after clicking on the link from the password reset email they received after following the <a href="#forgot_password">forgot password</a> instructions.</p>
+                <p>Once they have reset their password, they will be able to <a href="#login">Login</a> again.</p>
+            </div>
+        </div>
+
+        <div id="settings" class="app_block">
+            <div class="app_content">
+                <h2>Account Settings</h2>
+                <ul class="nav">
+                    <li><a href="#application_list">Cancel</a></li>
+                </ul>
+                <form>
+                    <p><input type="text" name="username" placeholder="username"/></p>
+                    <p><input type="password" name="password" placeholder="password"/></p>
+                    <p><input type="password" name="confirm_password" placeholder="confirm password"/></p>
+                    <p><input type="text" name="first" placeholder="First Name"/></p>
+                    <p><input type="submit" value="Save" /></p>
+                </form>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Login Screen</p>
+                <p>Sucess goes to <a href="#application_list">Application Home</a></p>
+            </div>
+        </div>
+
+        <div id="application_home" class="app_block">
+            <div class="app_content">
+                <h2>Application Home</h2>
+                <p>Welcome to the application home screen, from here you may go anywhere.</p>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Once logged in, the user will see the application home screen</p>
+            </div>
+        </div>
+
+        <div id="blank" class="app_block">
+            <div class="app_content">
+                <h2>Blank App Block</h2>
+            </div>
+
+            <div class="notes">
+                <h2>Notes</h2>
+                <p>Blank Notes</p>
+            </div>
+        </div>
+
+    </div>
+  <footer>
+
+  </footer>
+
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

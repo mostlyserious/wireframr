@@ -1,0 +1,86 @@
+a, a:visited {text-decoration: none; color: #ff6611;}
+#main {margin: 110px 20px;}
+header {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	background-color: #ccc;
+	border-bottom: 1px solid #333;
+}
+header h1 {
+	margin-left: 20px;
+	float: left;
+}
+
+header ul.nav {
+	float: right !important;
+}
+
+ul.nav {
+	margin-right: 30px;
+	list-style: none;
+
+	font-size: .8em;
+}
+
+#main ul.nav {
+	margin: 0;
+	padding: 0;
+}
+
+ul.nav li {
+	display: inline;
+	border-right: 1px solid #555;
+	padding: 5px 10px;
+}
+
+ul.nav li:first-of-type {
+	padding-left: 0;
+}
+
+ul.nav li:last-of-type { border-right: none;}
+
+h1, h2 {margin: 10px 0;}
+
+.app_block:first-of-type {
+	border-top: none !important;
+	margin-top: 0;
+}
+
+.app_block {
+	border-top: 10px dotted #dadada;
+	overflow: auto;
+	padding: 30px 10px;
+	height: 500px;
+	margin: 15px 0 0 0;
+}
+
+.app_block:last-of-type {
+	border-bottom: 10px dotted #dadada;
+}
+
+.app_content {
+	float: left;
+	margin: 0 2% 0 0;
+	padding: 8px;
+	width: 40%;
+	background-color: #efefef;
+	border: 1px solid #3f3f3f;
+	overflow: auto;
+}
+
+.app_content form {display: block;}
+
+.notes {
+	width: 50%;
+	height: 470px;
+	float: left;
+	margin-left: 30px;
+	border: 1px dashed #9f9f9f;
+	padding: 10px;
+}
+
+#blank {
+	display:none;
+}
+
