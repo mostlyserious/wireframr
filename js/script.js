@@ -9,6 +9,10 @@ $(document).ready(function() {
 		history.pushState({foo: 'bar'}, window.document.title, to);
 		return false;
 	});
+
+	$('form').submit(function() {
+		return false;
+	})
 });
 
 
